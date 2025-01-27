@@ -42,3 +42,21 @@
         int factn = factnm1*n;
         return factn;
     }
+
+//fibonacci series
+    public static void main(String args[]){
+        int first = 0;
+        int second = 1;
+        System.out.println(first);
+        System.out.println(second);
+        int n = 9;
+        fibonacci(first, second, n-2);
+    }
+    public static void fibonacci(int first, int second, int n){
+        if(n==0){
+            return;
+        }
+        int next = first + second;
+        System.out.println(next);
+        fibonacci(second, next, n-1);
+    }
