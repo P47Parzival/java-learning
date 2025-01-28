@@ -60,3 +60,18 @@
         System.out.println(next);
         fibonacci(second, next, n-1);
     }
+
+//print a string in reverse
+    public static void main(String args[]){
+        String name = "abcd";
+        int indx = name.length()-1;
+        reverse(name, indx);
+    }
+    public static void reverse(String name, int indx){
+        if(indx == 0){
+            System.out.print(name.charAt(indx));
+            return;
+        }
+        System.out.print(name.charAt(indx));
+        reverse(name, indx-1);
+    }
